@@ -1,7 +1,6 @@
-# Label-Prior Leakage in Personalised Federated Learning Evaluation
+# LABEL-PRIOR LEAKAGE IN FEDERATED EVALUATION AND AN INFERENCE MANAGEMENT FIX
 
-Code for a study of how personalised federated learning is benchmarked, with a
-gastrointestinal endoscopic screening case study.
+<img width="1485" height="597" alt="image" src="https://github.com/user-attachments/assets/1527623d-7fc8-4880-877d-95a9418f72c4" />
 
 Personalised FL is commonly evaluated by partitioning **both** the training and
 the test set with one Dirichlet proportion matrix, then scoring each client's
@@ -130,3 +129,11 @@ deterministic.
 ## License
 
 Code under the MIT License (see `LICENSE`).
+
+## Author
+
+**Abu Kowshir Bitto**
+
+- GitHub: [@kowshir-bitto](https://github.com/kowshir-bitto)
+- Website: [kowshirbitto.me](http://kowshirbitto.me/)
+- Google Scholar: [Abu Kowshir Bitto](https://scholar.google.com/citations?hl=en&user=AO0dWsgAAAAJ&view_op=list_works&gmla=AJ1KiT30Ms5pY2DUl6pfWl4cwjlBOwygW_3wawpWiD_769YBbLX8_0rqv4MiIf05GjDe6xY81ApN7Gy1DfwYJCZu)
