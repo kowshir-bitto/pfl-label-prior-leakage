@@ -54,6 +54,7 @@ python scripts/04_run_inference_evaluation.py
 python scripts/05_run_xai_generation.py 
 python scripts/06_aggregate_and_plot.py 
 python scripts/07_run_protocol_leak_analysis.py
+python scripts/08_synthetic_leak_proof.ipynb
 ```
 
 | Stage | Produces |
@@ -65,11 +66,9 @@ python scripts/07_run_protocol_leak_analysis.py
 | 05 | Grad-CAM++ attributions, expected calibration error, reliability curves |
 | 06 | Multi-seed aggregation, DeLong and Wilcoxon tests, publication figures |
 | 07 | Dual-protocol leakage analysis |
+| 08 | Synthetic Leak Proof |
 
 Timings are wall clock on an Intel i7-1355U (10 cores, 16 GB RAM, no GPU).
-
-To reproduce only the leakage analysis: stages 01 → 03 → 07. The Dirichlet
-sweep inside stage 07 needs no training at all.
 
 ## Layout
 
@@ -84,7 +83,7 @@ src/
     stats_utils.py        DeLong, Holm-Bonferroni, bootstrap ROC bands
     plotting.py, utils.py
 scripts/
-    01_ ... 07_           the ordered pipeline
+    01_ ... 08_           the ordered pipeline
 outputs/
     csv/                  one row per run, nothing aggregated in place
     figures/              300 DPI PNG and vector PDF
